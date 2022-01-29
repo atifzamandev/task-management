@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous"
+    />
+    <title>Task Management in JavaScript</title>
+</head>
+<body>
+    <header id="task-header">
+        <div class="container">
+            <h1 id ="main-title">Task Management</h1>
+          </div>
+    </header>
+
+    <div class="main-container" id="main">  
+        <form id="taskform" class="form-fields">
+            <input type="text" id="newtask" placeholder="Title..." class="input-form txt-color">
+            <input type="submit" value="Add" class="btn btn-color txt-color"> 
+        </form>
+        <div class="task-lists" id="listtasks">
+            <ul id= "tasks" class="tasks-group">
+                <li id="taskname" class="task-name">Task 1 to work with and complete it. <button class="btn btn-delete">x</button></li> 
+                <li id="taskname" class="task-name">Task 2 to work with and complete it. <button class="btn btn-delete">x</button></li> 
+                <li id="taskname" class="task-name">Task 3 to work with and complete it. <button class="btn btn-delete">x</button></li>
+                <li id="taskname" class="task-name">Task 4 to work with and complete it. <button class="btn btn-delete">x</button></li> 
+                <li id="taskname" class="task-name">Task 5 to work with and complete it. <button class="btn btn-delete">x</button></li> 
+                <li id="taskname" class="task-name">Task 6 to work with and complete it. <button class="btn btn-delete">x</button></li> 
+                <li id="taskname" class="task-name">Task 7 to work with and complete it. <button class="btn btn-delete">x</button></li> 
+            </ul>
+        </div>
+        
+        <div class="btn-container"> 
+            <button type="submit"  class="btn btn-remove btn-block" id="removeall">Remove All</button> 
+        </div>   
+    </div> 
+    <script src="./js/script.js"></script>       
+</body>
+</html>
